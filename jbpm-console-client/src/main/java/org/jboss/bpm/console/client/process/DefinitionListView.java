@@ -21,6 +21,10 @@
  */
 package org.jboss.bpm.console.client.process;
 
+import java.util.ArrayList;
+import java.util.List;
+import javax.enterprise.context.Dependent;
+
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.cell.client.FieldUpdater;
 import com.google.gwt.event.dom.client.ChangeEvent;
@@ -31,22 +35,27 @@ import com.google.gwt.user.cellview.client.TextColumn;
 import com.google.gwt.user.client.Command;
 import com.google.gwt.user.client.DeferredCommand;
 import com.google.gwt.user.client.Timer;
-import com.google.gwt.user.client.ui.*;
+import com.google.gwt.user.client.ui.HorizontalPanel;
+import com.google.gwt.user.client.ui.IsWidget;
+import com.google.gwt.user.client.ui.MenuBar;
+import com.google.gwt.user.client.ui.SimplePanel;
+import com.google.gwt.user.client.ui.VerticalPanel;
+import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.view.client.ListDataProvider;
-import org.drools.guvnor.client.common.*;
+import org.jboss.bpm.console.client.common.DataDriven;
+import org.jboss.bpm.console.client.common.LoadingOverlay;
+import org.jboss.bpm.console.client.common.Model;
+import org.jboss.bpm.console.client.common.ModelCommands;
+import org.jboss.bpm.console.client.common.ModelParts;
+import org.jboss.bpm.console.client.common.PagingCallback;
+import org.jboss.bpm.console.client.common.PagingPanel;
 import org.jboss.bpm.console.client.model.ProcessDefinitionRef;
-import org.jboss.bpm.console.client.model.ProcessInstanceRef;
 import org.jboss.errai.bus.client.ErraiBus;
 import org.jboss.errai.bus.client.api.Message;
 import org.jboss.errai.bus.client.api.MessageCallback;
 import org.uberfire.client.annotations.WorkbenchPartTitle;
 import org.uberfire.client.annotations.WorkbenchPartView;
 import org.uberfire.client.annotations.WorkbenchScreen;
-
-import javax.enterprise.context.Dependent;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 @Dependent
 @WorkbenchScreen(identifier = "DefinitionListView")

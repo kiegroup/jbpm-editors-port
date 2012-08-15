@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.drools</groupId>
     <artifactId>uberfire-jbpm</artifactId>
-    <version>5.5.0-SNAPSHOT</version>
+    <version>0.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>jbpm-console-client</artifactId>
@@ -34,6 +34,11 @@
     <dependency>
       <groupId>org.drools</groupId>
       <artifactId>jbpm-console-shared</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
     </dependency>
 
     <dependency>
@@ -57,28 +62,6 @@
       <scope>provided</scope>
     </dependency>
 
-    <dependency>
-      <groupId>javax.xml.bind</groupId>
-      <artifactId>jaxb-api</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>com.sun.xml.bind</groupId>
-      <artifactId>jaxb-impl</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>com.sun.xml.bind</groupId>
-      <artifactId>jaxb-xjc</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>javax.xml.stream</groupId>
-      <artifactId>stax-api</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>org.mvel</groupId>
-      <artifactId>mvel2</artifactId>
-    </dependency>
-
     <!-- Errai Core -->
     <dependency>
       <groupId>org.jboss.errai</groupId>
@@ -89,18 +72,6 @@
     <dependency>
       <groupId>org.jboss.errai</groupId>
       <artifactId>errai-cdi-client</artifactId>
-    </dependency>
-
-    <!-- TODO I'd like to remove this from here, but it's a dependency of errai-cdi-client -->
-    <dependency>
-      <groupId>org.jboss.errai</groupId>
-      <artifactId>errai-javax-enterprise</artifactId>
-      <scope>provided</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.jboss.errai</groupId>
-      <artifactId>errai-uibinder</artifactId>
     </dependency>
 
     <!-- CDI Development Utils -->
@@ -144,10 +115,26 @@
     </dependency>
 
     <dependency>
-      <groupId>com.google.code.gson</groupId>
-      <artifactId>gson</artifactId>
+      <groupId>javax.xml.bind</groupId>
+      <artifactId>jaxb-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-impl</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-xjc</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>javax.xml.stream</groupId>
+      <artifactId>stax-api</artifactId>
     </dependency>
 
+    <dependency>
+      <groupId>org.mvel</groupId>
+      <artifactId>mvel2</artifactId>
+    </dependency>
   </dependencies>
 
   <description>jBPM Console - Client</description>
@@ -158,7 +145,7 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>gwt-maven-plugin</artifactId>
         <configuration>
-          <module>org.drools.guvnor.FastCompiledjBPMShowcase</module>
+          <module>org.jboss.bpm.console.FastCompiledjBPMShowcase</module>
           <logLevel>INFO</logLevel>
           <compileSourcesArtifacts>
             <compileSourcesArtifact>org.uberfire:widgets-core</compileSourcesArtifact>
@@ -168,12 +155,10 @@
             <compileSourcesArtifact>org.uberfire:backend-api</compileSourcesArtifact>
             <compileSourcesArtifact>org.uberfire:backend-commons</compileSourcesArtifact>
             <compileSourcesArtifact>org.drools:jbpm-console-shared</compileSourcesArtifact>
-            <compileSourcesArtifact>org.jbpm:jbpm-human-task-core-cdi</compileSourcesArtifact>
           </compileSourcesArtifacts>
-          <runTarget>org.drools.guvnor.jBPMShowcase/jBPM.html</runTarget>
+          <runTarget>org.jboss.bpm.console.jBPMShowcase/jBPM.html</runTarget>
           <extraJvmArgs>-Xmx1024m -XX:MaxPermSize=256m</extraJvmArgs>
           <soyc>false</soyc>
-          <hostedWebapp>src/main/webapp/</hostedWebapp>
           <server>org.jboss.errai.cdi.server.gwt.JettyLauncher</server>
           <!-- drools-compiler has dependency on org.eclipse.jdt.core.compiler:ecj:jar:3.5.1:compile,
               see http://code.google.com/p/google-web-toolkit/issues/detail?id=4479 -->

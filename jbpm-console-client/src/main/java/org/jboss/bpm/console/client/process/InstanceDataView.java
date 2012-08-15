@@ -23,7 +23,6 @@ package org.jboss.bpm.console.client.process;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.enterprise.context.Dependent;
 
 import com.google.gwt.user.client.ui.IsWidget;
@@ -31,14 +30,15 @@ import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.xml.client.Document;
 import com.google.gwt.xml.client.NamedNodeMap;
 import com.google.gwt.xml.client.Node;
-//import org.jboss.bpm.console.client.BpmConsoleClientFactory;
-import org.drools.guvnor.client.LazyPanel;
-import org.drools.guvnor.client.common.CustomizableListBox;
-import org.drools.guvnor.client.util.ConsoleLog;
-import org.drools.guvnor.client.util.DOMUtil;
+import org.jboss.bpm.console.client.LazyPanel;
+import org.jboss.bpm.console.client.common.CustomizableListBox;
+import org.jboss.bpm.console.client.util.ConsoleLog;
+import org.jboss.bpm.console.client.util.DOMUtil;
 import org.uberfire.client.annotations.WorkbenchEditor;
 import org.uberfire.client.annotations.WorkbenchPartTitle;
 import org.uberfire.client.annotations.WorkbenchPartView;
+
+//import org.jboss.bpm.console.client.BpmConsoleClientFactory;
 
 /**
  * @author Heiko.Braun <heiko.braun@jboss.com>

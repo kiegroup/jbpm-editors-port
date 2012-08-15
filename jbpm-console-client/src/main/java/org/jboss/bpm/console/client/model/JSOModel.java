@@ -1,13 +1,13 @@
 package org.jboss.bpm.console.client.model;
 
-import com.google.gwt.core.client.JavaScriptObject;
-import com.google.gwt.core.client.JsArray;
-import com.google.gwt.core.client.JsArrayString;
-import org.drools.guvnor.client.util.SimpleDateFormat;
-
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
+
+import com.google.gwt.core.client.JavaScriptObject;
+import com.google.gwt.core.client.JsArray;
+import com.google.gwt.core.client.JsArrayString;
+import org.jboss.bpm.console.client.util.SimpleDateFormat;
 
 /**
  * Java overlay of a JavaScriptObject.

@@ -23,7 +23,6 @@ package org.jboss.bpm.console.client.process;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.enterprise.context.Dependent;
 
 import com.google.gwt.event.dom.client.ChangeEvent;
@@ -37,14 +36,14 @@ import com.google.gwt.user.client.ui.MenuBar;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import org.drools.guvnor.client.common.CustomizableListBox;
-import org.drools.guvnor.client.common.DataDriven;
-import org.drools.guvnor.client.common.LoadingOverlay;
-import org.drools.guvnor.client.common.Model;
-import org.drools.guvnor.client.common.ModelCommands;
-import org.drools.guvnor.client.common.ModelParts;
-import org.drools.guvnor.client.common.PagingCallback;
-import org.drools.guvnor.client.common.PagingPanel;
+import org.jboss.bpm.console.client.common.CustomizableListBox;
+import org.jboss.bpm.console.client.common.DataDriven;
+import org.jboss.bpm.console.client.common.LoadingOverlay;
+import org.jboss.bpm.console.client.common.Model;
+import org.jboss.bpm.console.client.common.ModelCommands;
+import org.jboss.bpm.console.client.common.ModelParts;
+import org.jboss.bpm.console.client.common.PagingCallback;
+import org.jboss.bpm.console.client.common.PagingPanel;
 import org.jboss.bpm.console.client.model.ProcessDefinitionRef;
 import org.jboss.errai.bus.client.ErraiBus;
 import org.jboss.errai.bus.client.api.Message;

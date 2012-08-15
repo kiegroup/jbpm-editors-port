@@ -21,9 +21,9 @@
  */
 package org.jboss.bpm.console.client.process.events;
 
-import org.jboss.bpm.console.client.model.ActiveNodeInfo;
-
 import java.util.List;
+
+import org.jboss.bpm.console.client.model.ActiveNodeInfo;
 
 /**
  * @author Heiko.Braun <heiko.braun@jboss.com>

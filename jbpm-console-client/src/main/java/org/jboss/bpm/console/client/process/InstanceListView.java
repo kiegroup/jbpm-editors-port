@@ -21,6 +21,11 @@
  */
 package org.jboss.bpm.console.client.process;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import javax.enterprise.context.Dependent;
+
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.cell.client.FieldUpdater;
 import com.google.gwt.core.client.GWT;
@@ -32,23 +37,34 @@ import com.google.gwt.user.cellview.client.Column;
 import com.google.gwt.user.cellview.client.TextColumn;
 import com.google.gwt.user.client.Command;
 import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.ui.*;
+import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.HasHorizontalAlignment;
+import com.google.gwt.user.client.ui.HasVerticalAlignment;
+import com.google.gwt.user.client.ui.HorizontalPanel;
+import com.google.gwt.user.client.ui.IsWidget;
+import com.google.gwt.user.client.ui.Label;
+import com.google.gwt.user.client.ui.MenuBar;
+import com.google.gwt.user.client.ui.MenuItem;
+import com.google.gwt.user.client.ui.PopupPanel;
+import com.google.gwt.user.client.ui.SimplePanel;
+import com.google.gwt.user.client.ui.TextBox;
+import com.google.gwt.user.client.ui.VerticalPanel;
+import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.view.client.ListDataProvider;
-
-import org.drools.guvnor.client.common.*;
-import org.drools.guvnor.client.util.SimpleDateFormat;
+import org.jboss.bpm.console.client.common.CustomizableListBox;
+import org.jboss.bpm.console.client.common.DataDriven;
+import org.jboss.bpm.console.client.common.IFrameWindowCallback;
+import org.jboss.bpm.console.client.common.IFrameWindowPanel;
+import org.jboss.bpm.console.client.common.LoadingOverlay;
+import org.jboss.bpm.console.client.common.WidgetWindowPanel;
 import org.jboss.bpm.console.client.icons.ConsoleIconBundle;
 import org.jboss.bpm.console.client.model.ProcessDefinitionRef;
 import org.jboss.bpm.console.client.model.ProcessInstanceRef;
 import org.jboss.bpm.console.client.model.TokenReference;
+import org.jboss.bpm.console.client.util.SimpleDateFormat;
 import org.uberfire.client.annotations.WorkbenchEditor;
 import org.uberfire.client.annotations.WorkbenchPartTitle;
 import org.uberfire.client.annotations.WorkbenchPartView;
-
-import javax.enterprise.context.Dependent;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 @Dependent
 @WorkbenchEditor(identifier = "InstanceListView")

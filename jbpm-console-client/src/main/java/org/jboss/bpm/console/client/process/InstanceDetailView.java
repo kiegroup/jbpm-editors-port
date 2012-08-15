@@ -22,7 +22,6 @@
 package org.jboss.bpm.console.client.process;
 
 import java.util.List;
-
 import javax.enterprise.context.Dependent;
 
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -38,20 +37,21 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.TabPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
-/*import org.jboss.bpm.console.client.ApplicationContext;
-import org.jboss.bpm.console.client.BpmConsoleClientFactory;
-import org.jboss.bpm.console.client.ServerPlugins;*/
-import org.drools.guvnor.client.common.CustomizableListBox;
-import org.drools.guvnor.client.common.PropertyGrid;
-import org.drools.guvnor.client.common.WidgetWindowPanel;
-import org.drools.guvnor.client.editors.jbpm.ServerPlugins;
+import org.jboss.bpm.console.client.ServerPlugins;
+import org.jboss.bpm.console.client.common.CustomizableListBox;
+import org.jboss.bpm.console.client.common.PropertyGrid;
+import org.jboss.bpm.console.client.common.WidgetWindowPanel;
 import org.jboss.bpm.console.client.model.ProcessDefinitionRef;
 import org.jboss.bpm.console.client.model.ProcessInstanceRef;
 import org.jboss.bpm.console.client.model.StringRef;
+import org.jboss.bpm.console.client.util.SimpleDateFormat;
 import org.uberfire.client.annotations.WorkbenchEditor;
 import org.uberfire.client.annotations.WorkbenchPartTitle;
 import org.uberfire.client.annotations.WorkbenchPartView;
-import org.drools.guvnor.client.util.SimpleDateFormat;
+
+/*import org.jboss.bpm.console.client.ApplicationContext;
+import org.jboss.bpm.console.client.BpmConsoleClientFactory;
+import org.jboss.bpm.console.client.ServerPlugins;*/
 
 /**
  * @author Heiko.Braun <heiko.braun@jboss.com>

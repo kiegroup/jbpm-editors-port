@@ -25,9 +25,10 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.ClickListener;
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import org.drools.guvnor.client.common.PropertyGrid;
+import org.jboss.bpm.console.client.common.PropertyGrid;
+import org.jboss.bpm.console.client.util.ConsoleLog;
+
 //import org.jboss.bpm.console.client.engine.ViewDeploymentAction;
-import org.drools.guvnor.client.util.ConsoleLog;
 
 /**
  * @author Heiko.Braun <heiko.braun@jboss.com>

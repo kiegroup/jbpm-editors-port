@@ -1,13 +1,12 @@
 package org.jboss.bpm.console.client.common;
 
-import com.google.gwt.core.client.GWT;
-import com.google.gwt.http.client.URL;
-import com.google.gwt.user.client.Window;
-import org.jboss.bpm.console.client.model.ProcessInstanceRef;
-import org.jboss.bpm.console.client.model.TokenReference;
-
 import java.util.Date;
 import java.util.List;
+
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.http.client.URL;
+import org.jboss.bpm.console.client.model.ProcessInstanceRef;
+import org.jboss.bpm.console.client.model.TokenReference;
 
 public class URLBuilder {
 
@@ -33,7 +32,7 @@ public class URLBuilder {
         String host = noProtocol.substring(0, noProtocol.indexOf("/"));
 
         // default url
-        return protocol + host + "/org.drools.guvnor.jBPMShowcase";
+        return protocol + host; // + "/org.jboss.bpm.console.jBPMShowcase";
     }
 
     public String getProcessInstancesURL(String processId) {

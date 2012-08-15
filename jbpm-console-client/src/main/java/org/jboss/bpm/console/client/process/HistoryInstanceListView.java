@@ -23,7 +23,6 @@ package org.jboss.bpm.console.client.process;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.enterprise.context.Dependent;
 
 import com.google.gwt.event.dom.client.ChangeEvent;
@@ -38,22 +37,23 @@ import com.google.gwt.user.client.ui.MenuItem;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-/*import org.jboss.bpm.console.client.ApplicationContext;
-import org.jboss.bpm.console.client.BpmConsoleClientFactory;*/
-import org.drools.guvnor.client.common.CustomizableListBox;
-import org.drools.guvnor.client.common.DataDriven;
-import org.drools.guvnor.client.common.LoadingOverlay;
-import org.drools.guvnor.client.common.PagingCallback;
-import org.drools.guvnor.client.common.PagingPanel;
-import org.drools.guvnor.client.common.WidgetWindowPanel;
+import org.jboss.bpm.console.client.common.CustomizableListBox;
+import org.jboss.bpm.console.client.common.DataDriven;
+import org.jboss.bpm.console.client.common.LoadingOverlay;
+import org.jboss.bpm.console.client.common.PagingCallback;
+import org.jboss.bpm.console.client.common.PagingPanel;
+import org.jboss.bpm.console.client.common.WidgetWindowPanel;
 import org.jboss.bpm.console.client.model.HistoryActivityInstanceRef;
 import org.jboss.bpm.console.client.model.HistoryProcessInstanceRef;
 import org.jboss.bpm.console.client.model.ProcessDefinitionRef;
 import org.jboss.bpm.console.client.process.events.HistoryActivityDiagramEvent;
+import org.jboss.bpm.console.client.util.SimpleDateFormat;
 import org.uberfire.client.annotations.WorkbenchEditor;
 import org.uberfire.client.annotations.WorkbenchPartTitle;
 import org.uberfire.client.annotations.WorkbenchPartView;
-import org.drools.guvnor.client.util.SimpleDateFormat;
+
+/*import org.jboss.bpm.console.client.ApplicationContext;
+import org.jboss.bpm.console.client.BpmConsoleClientFactory;*/
 
 /**
  * @author Maciej Swiderski <swiderski.maciej@gmail.com>

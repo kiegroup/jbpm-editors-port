@@ -1,11 +1,11 @@
 package org.jboss.bpm.console.client.model;
 
-import com.google.gwt.core.client.JsArray;
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
+
+import com.google.gwt.core.client.JsArray;
 
 public class JSOParser {
     public static List<ProcessDefinitionRef> parseProcessDefinitions(String json) {

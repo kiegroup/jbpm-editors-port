@@ -1,16 +1,15 @@
 package org.jboss.bpm.console.client.process;
 
+import java.util.List;
+
 import com.google.gwt.http.client.RequestBuilder;
 import com.google.gwt.http.client.Response;
-import com.google.gwt.user.client.Window;
-import org.drools.guvnor.client.common.DataDriven;
-import org.drools.guvnor.client.util.ConsoleLog;
 import org.jboss.bpm.console.client.common.AbstractRESTAction;
+import org.jboss.bpm.console.client.common.DataDriven;
 import org.jboss.bpm.console.client.common.URLBuilder;
 import org.jboss.bpm.console.client.model.JSOParser;
 import org.jboss.bpm.console.client.model.ProcessDefinitionRef;
-
-import java.util.List;
+import org.jboss.bpm.console.client.util.ConsoleLog;
 
 public class UpdateDefinitionsAction extends AbstractRESTAction {
 

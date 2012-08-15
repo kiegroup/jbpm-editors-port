@@ -21,10 +21,10 @@
  */
 package org.jboss.bpm.console.client.util.regex;
 
-import com.google.gwt.core.client.JavaScriptObject;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import com.google.gwt.core.client.JavaScriptObject;
 
 /**
  * <p>

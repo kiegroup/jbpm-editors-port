@@ -21,14 +21,13 @@
  */
 package org.jboss.bpm.console.client.process;
 
-import org.drools.guvnor.client.util.ConsoleLog;
-
 import com.google.gwt.json.client.JSONObject;
 import com.google.gwt.json.client.JSONParser;
 import com.google.gwt.json.client.JSONValue;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.Tree;
 import com.google.gwt.user.client.ui.TreeItem;
+import org.jboss.bpm.console.client.util.ConsoleLog;
 
 
 public class JSONTree extends ScrollPanel

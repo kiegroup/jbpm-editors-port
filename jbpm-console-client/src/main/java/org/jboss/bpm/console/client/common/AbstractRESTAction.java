@@ -1,10 +1,15 @@
 package org.jboss.bpm.console.client.common;
 
-import com.google.gwt.http.client.*;
-import com.google.gwt.user.client.Timer;
-import org.drools.guvnor.client.util.ConsoleLog;
-
 import java.io.IOException;
+
+import com.google.gwt.http.client.Request;
+import com.google.gwt.http.client.RequestBuilder;
+import com.google.gwt.http.client.RequestCallback;
+import com.google.gwt.http.client.RequestException;
+import com.google.gwt.http.client.Response;
+import com.google.gwt.http.client.URL;
+import com.google.gwt.user.client.Timer;
+import org.jboss.bpm.console.client.util.ConsoleLog;
 
 public abstract class AbstractRESTAction {
 

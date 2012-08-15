@@ -22,7 +22,6 @@
 package org.jboss.bpm.console.client.process;
 
 import java.util.List;
-
 import javax.enterprise.context.Dependent;
 
 import com.google.gwt.user.client.ui.HTML;
