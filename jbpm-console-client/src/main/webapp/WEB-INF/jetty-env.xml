@@ -11,7 +11,9 @@
   </Array>
 
   <New id="BeanManager" class="org.mortbay.jetty.plus.naming.Resource">
-    <Arg><Ref id="sample-weld"/></Arg>
+    <Arg>
+      <Ref id="sample-weld"/>
+    </Arg>
     <Arg>BeanManager</Arg>
     <Arg>
       <New class="javax.naming.Reference">
@@ -23,7 +25,9 @@
   </New>
 
   <New id="Errai" class="org.mortbay.jetty.plus.naming.Resource">
-    <Arg><Ref id="sample-weld"/></Arg>
+    <Arg>
+      <Ref id="sample-weld"/>
+    </Arg>
     <Arg>ErraiService</Arg>
     <Arg>
       <New class="javax.naming.Reference">
@@ -33,4 +37,15 @@
       </New>
     </Arg>
   </New>
+
+  <!--<New id="DS" class="org.mortbay.jetty.plus.naming.Resource">-->
+    <!--<Arg>jdbc/testDS1</Arg>-->
+    <!--<Arg>-->
+      <!--<New class="org.h2.jdbcx.JdbcDataSource">-->
+        <!--<Set name="URL">jdbc:h2:/tmp/jbpm-console.db</Set>-->
+        <!--<Set name="User">db_user</Set>-->
+        <!--<Set name="Password">db_pass</Set>-->
+      <!--</New>-->
+    <!--</Arg>-->
+  <!--</New>-->
 </Configure>

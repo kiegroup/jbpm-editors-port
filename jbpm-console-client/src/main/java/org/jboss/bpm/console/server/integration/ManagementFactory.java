@@ -13,7 +13,7 @@ public abstract class ManagementFactory {
         return (ManagementFactory)
                 ServiceLoader.loadService(
                         ManagementFactory.class.getName(),
-                        "org.jbpm.integration.console.ManagementFactoryImpl"
+                        "org.jboss.bpm.console.server.integration.implementation.ManagementFactory"
                 );
     }
 
